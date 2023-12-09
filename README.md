@@ -47,7 +47,7 @@ dfx canister call translationService translate '("Your_Google_Translate_API_Key"
 
 
 ## Google Translate API Key
-To use this service, you need a Google Translate API key. You can generate this key at the Google Cloud Console.
+To use this service, you need a Google Translate API key. You can generate this key at the Google Cloud Console - https://console.cloud.google.com/marketplace/product/google/translate.googleapis.com?_ga=2.22153913.-324765067.1702156975
 
 ## Running Tests
 

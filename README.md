@@ -43,6 +43,8 @@ To use the translationService, make a call to the canister with the required arg
 dfx canister call translationService translate '("Your_Google_Translate_API_Key", "Text_to_Translate", "Target_Language_Code")'
 
 ```
+![trans2](https://github.com/blaz1988/icp_translation_service/assets/5670807/0e21720d-1769-49de-a548-bbafdd110ec5)
+
 
 ## Google Translate API Key
 To use this service, you need a Google Translate API key. You can generate this key at the Google Cloud Console.
@@ -55,3 +57,6 @@ To run tests for the translationService, use the following command:
 export API_KEY=Your_Google_Translate_API_Key
 npm test
 ```
+
+![image](https://github.com/blaz1988/icp_translation_service/assets/5670807/b507fe5d-0ffa-4a7f-8b34-fd1fb6bf2496)
+

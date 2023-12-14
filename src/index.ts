@@ -50,13 +50,19 @@ export default Canister({
     })
 });
 
-function processResponse(blob) {
+interface TranslationResponse {
+    data?: {
+        translations?: Array<{ translatedText: string }>;
+    };
+}
+
+function processResponse(blob: Blob): string {
     try {
         const textDecoder = new TextDecoder('utf-8');
         const text = textDecoder.decode(blob);
-        const jsonData = JSON.parse(text);
+        const jsonData: TranslationResponse = JSON.parse(text);
 
-        if (jsonData && jsonData.data && jsonData.data.translations && jsonData.data.translations.length > 0) {
+        if (jsonData.data?.translations?.length > 0) {
             const translatedText = jsonData.data.translations[0].translatedText;
             return translatedText;
         } else {

@@ -19,6 +19,7 @@ export function getTests(
                 const result = await translationService.translate(apiKey, queryText, targetLanguage);
 
                 // Check the result
+                console
                 return {
                     Ok: checkResult(result)
                 };
@@ -28,5 +29,5 @@ export function getTests(
 }
 
 function checkResult(result: string): boolean {
-    return result === "automobil";
+    return result.Ok === "automobil";
 }

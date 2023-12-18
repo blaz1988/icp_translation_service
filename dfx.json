@@ -5,10 +5,10 @@
             "main": "src/index.ts",
             "candid": "src/index.did",
             "build": "npx azle translationService",
-            "wasm": ".azle/translate/translate.wasm",
+            "wasm": ".azle/translationService/translationService.wasm",
             "gzip": true,
             "declarations": {
-                "output": "test/dfx_generated/translate",
+                "output": "test/dfx_generated/translationService",
                 "node_compatibility": true
             }
         }

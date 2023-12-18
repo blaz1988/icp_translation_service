@@ -1,6 +1,6 @@
 import { ActorSubclass } from '@dfinity/agent';
 import { Test } from 'azle/test';
-import { _SERVICE } from './dfx_generated/translate/translationService.did';
+import { _SERVICE } from './dfx_generated/translationService/translationService.did';
 import { HttpResponse } from 'azle/canisters/management';
 import decodeUtf8 from 'decode-utf8';
 

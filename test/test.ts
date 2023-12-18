@@ -1,5 +1,5 @@
 import { getCanisterId, runTests } from 'azle/test';
-import { createActor } from './dfx_generated/translate';
+import { createActor } from './dfx_generated/translationService';
 import { getTests } from './tests';
 
 const translateCanister = createActor(
